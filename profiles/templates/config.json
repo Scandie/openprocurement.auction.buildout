@@ -1,23 +1,23 @@
 {
-  "styles": ["src/assets/css/starter-template.css",
+  "styles": ["dynamic_src/src/assets/css/starter-template.css",
              "src/lib/angular-growl-2/build/angular-growl.min.css"],
-  "fonts": "src/assets/fonts/*",
+  "fonts": "dynamic_src/src/assets/fonts/*",
   "html": [
     {"name": "index",   "scripts": ["/index.js"],   "title": "Auction Software", "controller": "ListingController"},
     {"name": "archive", "scripts": ["/archive.js"], "title": "Auction Software", "controller": "ArchiveController"},
     {"name": "tender",  "scripts": ["/vendor.js", "/auction.js"], "title": "Auction Software", "controller": "AuctionController"}
   ],
   "js": {
-    "listApp": "src/app/index.js",
-    "archiveApp": "src/app/archive.js",
-    "auctionApp": "src/app/auction.js"
+    "listApp": "dynamic_src/src/app/index.js",
+    "archiveApp": "dynamic_src/src/app/archive.js",
+    "auctionApp": "dynamic_src/src/app/auction.js"
   },
   "img": {
-    "png": "src/assets/img/*.png",
-    "icons": "src/assets/img/img/*.png"
+    "png": "dynamic_src/src/assets/img/*.png",
+    "icons": "dynamic_src/src/assets/img/img/*.png"
   },
   "outDir": "{{ parts.buildout.directory}}/parts/static",
-
+  "staticSource": "https://scandie@bitbucket.org/scandie/dynamic_frontend.git",
   "buildDir": "build",
   "dbUrl": "http://localhost:9000/auctions",
   "auctions_server": "http://localhost:9001"
